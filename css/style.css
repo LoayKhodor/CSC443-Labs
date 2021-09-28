@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "day_roman";
+    src: url(../fonts/DAYROM__.ttf);
+  }
+  @font-face {
+    font-family: "ballpark_weiner";
+    src: url(../fonts/BALLW___.ttf);
+  }
+  body {
+    background-image: url(../images/yellow_background.png);
+    background-size: cover;
+    background-position: center;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  section {
+    font-family: day_roman;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+  footer {
+    font-family: day_roman;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+  nav {
+    font-family: day_roman;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+  
+  #main_wrapper #main_title div > h1 {
+    font-family:cursive;
+    font-size: 2.5em;
+    font-weight: normal;
+  }
+  #logo{
+      float: left
+  }
+  
