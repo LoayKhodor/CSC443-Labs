@@ -1,40 +1,90 @@
 @font-face {
-    font-family: "day_roman";
-    src: url(../fonts/DAYROM__.ttf);
-  }
-  @font-face {
-    font-family: "ballpark_weiner";
-    src: url(../fonts/BALLW___.ttf);
-  }
-  body {
-    background-image: url(../images/yellow_background.png);
-    background-size: cover;
-    background-position: center;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-  }
-  section {
-    font-family: day_roman;
-    text-transform: uppercase;
-    font-weight: normal;
-  }
-  footer {
-    font-family: day_roman;
-    text-transform: uppercase;
-    font-weight: normal;
-  }
-  nav {
-    font-family: day_roman;
-    text-transform: uppercase;
-    font-weight: normal;
-  }
-  
-  #main_wrapper #main_title div > h1 {
-    font-family:cursive;
-    font-size: 2.5em;
-    font-weight: normal;
-  }
-  #logo{
-      float: left
-  }
-  
+  font-family: "day_roman";
+  src: url(../fonts/DAYROM__.ttf);
+}
+@font-face {
+  font-family: "ballpark_weiner";
+  src: url(../fonts/BALLW___.ttf);
+}
+html {
+  background-image: url(../images/yellow_background.png);
+  background-size: cover;
+  background-position: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+header {
+  height: 115px;
+  border-radius: 25px;
+  border: 4px solid tomato;
+  box-shadow: 2px 2px 20px;
+}
+section {
+  font-family: day_roman;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+footer {
+  font-family: day_roman;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+nav {
+  font-family: day_roman;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+#main_wrapper #main_title > h1 {
+  font-family: ballpark_weiner;
+  font-size: 2.5em;
+  font-weight: normal;
+  padding-top: 30px;
+  padding-left: 90px;
+  transform: translateY(-20px);
+}
+
+#main_wrapper #main_title > img {
+  padding-left: 15px;
+  transform: translateY(-15px);
+}
+#main_wrapper #main_title > h2 {
+  font-family: day_roman;
+  font-size: 1.1em;
+  font-weight: normal;
+  transform: translateY(-45px);
+  padding-left: 15px;
+}
+#logo {
+  float: left;
+}
+
+nav {
+  box-shadow: 2px 2px 20px;
+  list-style-type: none;
+  float: right;
+  height: 20px;
+  width: 450px;
+ 
+  margin-right: 70px;
+  margin-bottom: 20px;
+  padding-top: -20px;
+  padding-bottom: 25px;
+  align-content: center;
+  transform: translateY(-75px);
+  word-spacing: 10px;
+  border-radius: 15px;
+  border: 4px solid blue;
+}
+nav > ul li {
+  display: inline;
+}
+nav > ul li a:link {
+  text-decoration: none;
+  font-size: 1.3em;
+  color: #181818;
+}
+nav > ul li a:hover {
+  color: #760001;
+  border-bottom: #760001 3px solid;
+}
