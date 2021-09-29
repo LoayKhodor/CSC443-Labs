@@ -14,16 +14,14 @@ html {
     "Lucida Sans", Arial, sans-serif;
 }
 header {
+  position: relative;
   height: 115px;
-  border-radius: 25px;
+  width: 100%;
+  border-radius: 10px;
   border: 4px solid tomato;
   box-shadow: 2px 2px 20px;
 }
-section {
-  font-family: day_roman;
-  text-transform: uppercase;
-  font-weight: normal;
-}
+
 footer {
   font-family: day_roman;
   text-transform: uppercase;
@@ -33,6 +31,7 @@ nav {
   font-family: day_roman;
   text-transform: uppercase;
   font-weight: normal;
+  color: #181818;
 }
 
 #main_wrapper #main_title > h1 {
@@ -60,23 +59,25 @@ nav {
 }
 
 nav {
+  position: absolute;
+  right: 0;
+  bottom: 0;
   box-shadow: 2px 2px 20px;
   list-style-type: none;
   float: right;
   height: 20px;
-  width: 450px;
- 
+  width: 430px;
+  word-spacing: 10px;
+  border-radius: 10px;
+  padding-right: 10px;
+  border: 4px solid blue;
+
   margin-right: 70px;
   margin-bottom: 20px;
-  padding-top: -20px;
-  padding-bottom: 25px;
-  align-content: center;
-  transform: translateY(-75px);
-  word-spacing: 10px;
-  border-radius: 15px;
-  border: 4px solid blue;
+  padding-bottom: 35px;
 }
 nav > ul li {
+  /*display list items horizontally*/
   display: inline;
 }
 nav > ul li a:link {
@@ -87,4 +88,134 @@ nav > ul li a:link {
 nav > ul li a:hover {
   color: #760001;
   border-bottom: #760001 3px solid;
+}
+
+#banner_image {
+  position: relative;
+  margin-top: 10px;
+  width: 100%;
+  height: 15%;
+  border: 4px solid orange;
+  box-shadow: 4px 4px 20px;
+  border-radius: 10px;
+}
+
+#banner_image #san_francisco {
+  border-radius: 5px;
+  width: 100%;
+}
+
+#banner_image #banner_description {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-indent: 15px;
+  color: white;
+  width: inherit;
+  background-color: rgba(24, 24, 24, 0.8);
+  font-size: 0.8em;
+}
+.red_button {
+  position: absolute;
+  bottom: 6px;
+  right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  border: 1px solid #760001;
+  background-image: url(../images/red_background.png);
+}
+#banner_description a:link {
+  text-decoration: none;
+}
+#banner_description a {
+  color: white;
+}
+#banner_description img {
+  padding-right: 5px;
+}
+#banner_description a:hover {
+  color: #760001;
+  border-bottom: #760001 3px solid;
+}
+
+section {
+  width: 100%;
+  height: 565px;
+  position: relative;
+  font-family: day_roman;
+
+  font-weight: normal;
+  border-radius: 10px;
+  border: 4px solid darkgreen;
+  margin-top: 10px;
+  box-shadow: 4px 4px 20px;
+}
+section article {
+  float: left;
+  left: 0;
+  width: 69%;
+  margin: 3px 3px 3px 3px;
+  padding: 2px 2px 2px 2px;
+  border-radius: 10px;
+  border: 4px solid navy;
+  font-size: 0.8em;
+  box-shadow: 3px 3px 10px;
+  max-height: inherit;
+}
+section aside {
+  position: absolute;
+  right: 0;
+  width: 28%;
+  margin: 3px 3px 3px 3px;
+
+  border-radius: 10px;
+  padding: 10px 2px 10px 2px;
+  background-color: #706b64;
+  border: 4px solid palevioletred;
+  text-decoration-color: white;
+  box-shadow: 3px 3px 10px #1c1a19;
+  max-height: inherit;
+}
+
+.ico_categorie {
+  padding-top: 5px;
+}
+section article h1 {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.5em;
+  padding-left: 50px;
+  padding-top: 5px;
+  top: 0;
+}
+
+section aside h1 {
+  padding-left: 10px;
+  padding-top: 5px;
+  font-size: 1.5em;
+  color: white;
+  text-transform: uppercase;
+}
+aside p{
+  color:white;
+  padding-left: 10px;
+}
+#zozor_picture {
+  text-align: center;
+}
+section aside #social_media {
+  text-align: center;
+}
+section aside #social_media img{
+  padding-left: 10px;
+}
+
+section aside #zozor_picture img {
+  border: 2px solid black;
+  transform: translateY(-30px);
 }
