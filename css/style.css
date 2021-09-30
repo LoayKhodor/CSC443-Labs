@@ -166,6 +166,7 @@ section article {
   font-size: 0.8em;
   box-shadow: 3px 3px 10px;
   max-height: inherit;
+  z-index: 0;
 }
 section aside {
   position: absolute;
@@ -180,12 +181,14 @@ section aside {
   text-decoration-color: white;
   box-shadow: 3px 3px 10px #1c1a19;
   max-height: inherit;
+  z-index: 2;
 }
 
 .ico_categorie {
   padding-top: 5px;
 }
 section article h1 {
+  position: absolute;
   text-transform: uppercase;
   font-weight: normal;
   font-size: 1.5em;
@@ -201,8 +204,8 @@ section aside h1 {
   color: white;
   text-transform: uppercase;
 }
-aside p{
-  color:white;
+aside p {
+  color: white;
   padding-left: 10px;
 }
 #zozor_picture {
@@ -211,7 +214,7 @@ aside p{
 section aside #social_media {
   text-align: center;
 }
-section aside #social_media img{
+section aside #social_media img {
   padding-left: 10px;
 }
 
@@ -219,3 +222,118 @@ section aside #zozor_picture img {
   border: 2px solid black;
   transform: translateY(-30px);
 }
+section aside #arrow {
+  position: relative;
+  bottom: 0;
+  color: white;
+  transform: translateX(-17px);
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 155px;
+  border: 4px solid blue;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px;
+  margin-top: 10px;
+}
+
+#tweet {
+  float: left;
+  
+  margin-top: 20px;
+  margin-left: 50px;
+  border: 4px solid #181818;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px;
+  width: 25%;
+  padding-left: 10px;
+}
+#tweet h1 {
+  font-weight: normal;
+  font-size: 1.1em;
+}
+#tweet p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-transform: initial;
+}
+
+#my_pictures {
+  float: left;
+  margin-top: 20px;
+  margin-left: 30px;
+  border: 4px solid #181818;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px;
+  width: 30%;
+  padding-left: 10px;
+  height: 120px;
+}
+#my_pictures h1 {
+  font-size: 1.1em;
+  font-weight: normal;
+}
+
+#my_pictures img {
+  border: 2px solid black;
+  margin-left: 2px;
+  margin-right: 2px;
+  transform: translateY(-5px);
+}
+
+#my_pictures p {
+  text-align: center;
+}
+
+#my_friends {
+  position: relative;
+  float: left;
+  margin-top: 20px;
+  margin-left: 30px;
+  border: 4px solid #181818;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px;
+  width: 30%;
+  padding-left: 10px;
+  height: 120px;
+}
+
+#my_friends h1 {
+  font-size: 1.1em;
+  font-weight: normal;
+}
+
+#my_friends ul {
+  column-count: 2;
+  margin: 0;
+  list-style-image: url("../images/external_link.png");
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+#my_friends ul li a:link {
+  text-decoration: none;
+}
+
+#my_friends ul li a {
+  position: absolute;
+  color: #760001;
+  font-size: 0.8em;
+  text-transform: initial;
+}
+
+#arrow_footer{
+  position: absolute;
+  padding-left: 50%;
+  transform: translateY(-4px);
+  background-color: transparent;
+}
+#arrow_line{
+  position: absolute;
+  padding-left: 50%;
+  transform: translateY(-3px);
+  height: 3%;
+  
+}
+
