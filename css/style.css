@@ -89,6 +89,9 @@ nav > ul li a:hover {
   color: #760001;
   border-bottom: #760001 3px solid;
 }
+nav ul a{
+  color: #181818;
+}
 
 #banner_image {
   position: relative;
